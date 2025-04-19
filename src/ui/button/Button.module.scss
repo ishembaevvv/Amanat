@@ -1,0 +1,43 @@
+.sumbit {
+	padding: 10px 15px;
+  border-radius: 20px;
+  border: 0;
+  background: var(--teal);
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.login {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 0;
+  background: var(--white);
+  color: var(--teal);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.search {
+  background: var(--white);
+  width: 40px;
+  height: 31px;
+  border: 2px solid var(--gray);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.default {
+  background: var(--white);
+  width: 40px;
+  height: 31px;
+  border: 2px solid var(--gray);
+  border-radius: 5px;
+}
