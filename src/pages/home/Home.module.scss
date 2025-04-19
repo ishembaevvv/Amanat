@@ -1,0 +1,31 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	.title {
+		font-size: 44px;
+	}
+
+	.info {
+		display: flex;
+		justify-content: space-between;
+		width: 900px;
+		gap: 20px;
+
+		.avatar {
+			width: 300px;
+		}
+
+		.list {
+			list-style: none;
+			font-size: 32px;
+
+			.desc {
+				text-align: center;
+			}
+		}
+	}
+}

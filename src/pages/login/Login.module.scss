@@ -23,35 +23,11 @@
   margin-bottom: 15px;
 }
 
-.input {
-  border-radius: 20px;
-  border: 1px solid var(--gray);
-  outline: 0 !important;
-  box-sizing: border-box;
-  padding: 12px 15px;
-}
-
 .pageLink {
-	
   text-decoration: underline;
   text-align: end;
   color: var(--gray);
   text-decoration-color: var(--gray);
-}
-
-.formBtn {
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: 0 !important;
-  outline: 0 !important;
-  background: var(--teal);
-  color: var(--white);
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-  &:active {
-    box-shadow: none;
-  }
 }
 
 .signUpLabel {
@@ -69,6 +45,3 @@
   cursor: pointer;
   font-weight: 800;
 }
-
-
-

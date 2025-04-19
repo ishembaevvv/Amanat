@@ -10,7 +10,7 @@
 	align-items: center;
 
 	.list {
-		width: 150px;
+		width: 300px;
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
@@ -18,10 +18,5 @@
 		li {
 			cursor: pointer;
 		}
-	}
-
-	.logout {
-		text-decoration: underline;
-		cursor: pointer;
 	}
 }

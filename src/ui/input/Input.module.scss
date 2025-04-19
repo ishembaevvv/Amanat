@@ -1,0 +1,16 @@
+.default {
+	border-radius: 20px;
+  border: 1px solid var(--gray);
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.search {
+  background: var(--white);
+  width: 250px;
+  height: 30px;
+  border: 2px solid var(--gray);
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}

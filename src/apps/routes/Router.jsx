@@ -1,22 +1,27 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../layout/App/App";
-import Login from "../../modules/login/Login";
 import { PATH } from "../../utils/constants/Constants";
-import Home from "../../modules/home/Home";
+import Layout from "../layout/Layout";
+import Login from "../../pages/login/Login";
+import Home from "../../pages/home/Home";
+import Orders from "../../pages/Orders/Orders";
 
 export const AppRouter = createBrowserRouter([
 	{
-		path: PATH.login,
-		element: <App />,
+		path: PATH.home,
+		element: <Layout />,
 		children: [
 			{
-				path: PATH.login,
-				element: <Login />,
+				path: PATH.home,
+				element: <Home />
 			},
 			{
-				path: "/home",
-				element: <Home />,
+				path: PATH.login,
+				element: <Login />
 			},
-		],
+			{
+				path: PATH.orders,
+				element: <Orders />
+			},
+		]
 	},
 ]);
