@@ -1,5 +1,6 @@
 .container {
-	width: 500px;
+	margin-top: 400px;
+	width: 100%;
 	height: auto;
 	box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.55);
 	display: flex;
@@ -7,10 +8,11 @@
 	align-items: center;
 	padding: 20px;
 	border-radius: 5px;
+	gap: 20px;
 
 	.card {
-		width: 440px;
-		height: 450px;
+		width: 1239px;
+		height: 525px;
 		background: var(--white);
 		border-radius: 5px;
 		box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.55);
@@ -20,6 +22,7 @@
 			height: 20px;
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 			padding: 20px;
 			border-bottom: 1px solid var(--gray);
 		}
@@ -35,16 +38,18 @@
 			li {
 				display: flex;
 				align-items: center;
+				gap: 10px;
 			}
 		}
 
 		.buttons {
 			position: relative;
-			top: 20px;
-			left: 290px;
+			top: 80px;
+			left: 1050px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			gap: 20px;
 			width: 130px;
 		}
 	}

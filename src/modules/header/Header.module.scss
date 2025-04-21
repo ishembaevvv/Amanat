@@ -1,22 +1,39 @@
 .header {
 	position: absolute;
+	position: fixed;
 	top: 0;
-	color: var(--white);
+	color: var(--blue);
 	width: 100%;
 	height: 70px;
-	background: var(--teal);
+	background: var(--white);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 1000;
 
 	.list {
-		width: 300px;
+		width: 400px;
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
 
 		li {
 			cursor: pointer;
+			border: 1px solid transparent;
+			transition: .5s;
+			border-radius: 25px;
+			font-size: 24px;
+			padding: 10px;
+
+			&:hover {
+				color: var(--dark);
+				background: var(--orange);
+				border-color: var(--orange);
+			}
 		}
+	}
+
+	.container {
+		width: 200px;
 	}
 }

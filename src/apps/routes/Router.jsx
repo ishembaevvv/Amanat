@@ -4,6 +4,7 @@ import Layout from "../layout/Layout";
 import Login from "../../pages/login/Login";
 import Home from "../../pages/home/Home";
 import Orders from "../../pages/Orders/Orders";
+import Finance from "../../pages/finance/Finance";
 
 export const AppRouter = createBrowserRouter([
 	{
@@ -21,6 +22,10 @@ export const AppRouter = createBrowserRouter([
 			{
 				path: PATH.orders,
 				element: <Orders />
+			},
+			{
+				path: PATH.finance,
+				element: <Finance />
 			},
 		]
 	},

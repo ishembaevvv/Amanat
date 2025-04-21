@@ -1,0 +1,40 @@
+.edit {
+	position: relative;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 700px;
+	height: auto;
+	padding: 20px;
+	border: 2px solid var(--gray);
+	margin: 10px;
+	border-radius: 5px;
+	background: var(--white);
+	z-index: 1000;
+
+	.photo {
+		display: flex;
+		flex-direction: column;
+
+		.image {
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			border: 2px solid var(--teal);
+
+			img {
+				max-width: 653px;
+				max-height: 400px;
+				background-repeat: no-repeat;
+				object-fit: contain;
+			}
+		}
+	}
+
+	.btns {
+		display: flex;
+		gap: 10px;
+	}
+}

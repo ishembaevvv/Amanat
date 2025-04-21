@@ -1,0 +1,11 @@
+.table {
+	width: 470*3;
+	height: auto;
+	border: 1px solid var(--dark);
+	border-radius: 9px;
+	th {
+		width: 470px;
+		height: 40px;
+		border: 1px solid var(--dark);
+	}
+}

@@ -1,9 +1,10 @@
 .sumbit {
+  min-height: 45px;
 	padding: 10px 15px;
   border-radius: 20px;
   border: 0;
-  background: var(--teal);
-  color: var(--white);
+  background: var(--orange);
+  color: var(--dark);
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -27,17 +28,20 @@
 }
 
 .search {
-  background: var(--white);
+  background: var(--gray);
   width: 40px;
-  height: 31px;
-  border: 2px solid var(--gray);
-  border-radius: 0px 5px 5px 0px;
+  height: 41px;
+  border: 2px solid var(--gray-dark);
+  border-radius: 0px 7px 7px 0px;
 }
 
 .default {
-  background: var(--white);
-  width: 40px;
-  height: 31px;
-  border: 2px solid var(--gray);
-  border-radius: 5px;
+  background: var(--gray);
+  min-width: 50px;
+  color: var(--dark);
+  font-weight: bold;
+  border: none;
+  width: 267px;
+  height: 45px;
+  border-radius: 14px;
 }

@@ -11,7 +11,7 @@ export default function Search() {
 			</div>
 
 			<div className={scss.filter}>
-				<select defaultChecked="false">
+				<select className={scss.select} defaultChecked="false">
 					<option value="true">Готов доставке</option>
 					<option value="false">Забрал</option>
 				</select>
@@ -24,8 +24,8 @@ export default function Search() {
 			</div>
 
 			<div className={scss.footer}>
-				<Input type="checkbox" />
-				<label for="checkbox">Выбрать всё</label>
+				<Input type="checkbox" variant="checkbox" />
+				<p>Выбрать все</p>
 			</div>
 		</div>
 	);

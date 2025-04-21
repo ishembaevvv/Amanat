@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../../ui/button/Button";
 import { data } from "../../utils/constants/Constants";
 import scss from "./Cart.module.scss";
@@ -7,18 +8,29 @@ import {
 	FaPhoneAlt,
 	FaMoneyBillAlt,
 	FaClock,
-	FaPen
+	FaPen,
 } from "react-icons/fa";
 import { IoSpeedometerOutline } from "react-icons/io5";
+import Edit from "../edit/Edit";
+import Input from "../../ui/input/Input";
 
 export default function Cart() {
+	const [modal, setModal] = useState(false);
+	const [сheck, setСheck] = useState(false);
+
+
 	return (
 		<div className={scss.container}>
+			{modal ? <Edit setModal={setModal} /> : ""}
 			{data.map((item, index) => {
 				return (
 					<div key={index} className={scss.card}>
 						<div className={scss.header}>
-							{item.number}: id {item.id} {item.startLoc}-{item.endLoc}
+							<p>
+								{item.number}: id {item.id} {item.startLoc}-{item.endLoc}
+							</p>
+
+							<Input type="checkbox" checked={true} variant="checkbox" />
 						</div>
 
 						<ul className={scss.list}>
@@ -47,7 +59,11 @@ export default function Cart() {
 						</ul>
 
 						<div className={scss.buttons}>
-							<Button variant="default" text={<FaPen color="#000" />} />
+							<Button
+								variant="default"
+								text={<FaPen color="#000" />}
+								onClick={() => setModal(true)}
+							/>
 							<Button variant="sumbit" text="Возрат" />
 						</div>
 					</div>

@@ -1,15 +1,19 @@
 .search {
-	width: 500px;
-	height: 250px;
-	box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: fixed;
+	background: var(--white);
+	width: 1339px;
+	margin-top: 70px;
+	height: auto;
+	min-width: 250px;
+	padding: 20px;
 	gap: 20px;
+	z-index: 1000;
+	box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.55);
 
 	.header {
-		border-bottom: 1px solid var(--gray);
 		width: 100%;
 		padding: 20px;
 	}
@@ -17,6 +21,15 @@
 	.filter {
 		display: flex;
 		gap: 10px;
+		margin-right: 50px;
+		
+
+		.select {
+			width: 1080px;
+			height: 41px;
+			border-radius: 7px;
+			background: var(--gray);
+		}
 
 		select {
 			background: var(--white);
@@ -27,8 +40,14 @@
 		}
 	}
 
+	.container {
+		width: 1239px;
+	}
+
 	.footer {
+		display: flex;
 		position: relative;
-		right: 95px;
+		right: 550px;
+		gap: 10px;
 	}
 }

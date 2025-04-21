@@ -1,3 +1,7 @@
+input {
+  padding: 5px;
+}
+
 .default {
 	border-radius: 20px;
   border: 1px solid var(--gray);
@@ -7,10 +11,16 @@
 }
 
 .search {
-  background: var(--white);
-  width: 250px;
-  height: 30px;
+  background: var(--gray);
+  width: 1150px;
+  height: 41px;
   border: 2px solid var(--gray);
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 7px 0px 0px 7px;
   padding: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background: var(--gray);
 }
